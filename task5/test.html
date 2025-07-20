@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather app</title>
+  <link rel="stylesheet" href="test.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>WEATHER APP</h1>
+    <div>
+      <input type="text" id="input" placeholder="Enter city name" />
+      <button id="search">Search</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="weather">
+      <div class="weather-info">
+        <h2 id="city">Ramagundam, IN</h2>
+        <div class="temp-box">
+          <img src="weather.jpg" alt="" id="img" />
+          <p id="temperature">26 °C</p>
+        </div>
+        <span id="clouds">Broken Clouds</span>
+      </div>
+
+      <div class="forecast-section">
+        <h3 class="stats-title">Today's Hourly Forecast</h3>
+        <div class="hourly-scroll">
+          <div class="forecast-card">6 AM<br />24°C</div>
+          <div class="forecast-card">7 AM<br />25°C</div>
+          <div class="forecast-card">8 AM<br />26°C</div>
+          <div class="forecast-card">9 AM<br />27°C</div>
+          <div class="forecast-card">10 AM<br />28°C</div>
+          <div class="forecast-card">11 AM<br />29°C</div>
+          <div class="forecast-card">12 PM<br />30°C</div>
+          <div class="forecast-card">1 PM<br />31°C</div>
+          <div class="forecast-card">2 PM<br />30°C</div>
+          <div class="forecast-card">3 PM<br />29°C</div>
+          <div class="forecast-card">4 PM<br />28°C</div>
+          <div class="forecast-card">5 PM<br />27°C</div>
+        </div>
+
+        <h3 class="stats-title">More Weather Stats</h3>
+
+        <div class="extra-info">
+          <div class="info-card">
+            <span class="icon">🌬️</span>
+            <div>
+              <p class="label">Wind Speed</p>
+              <p id="wind">15 km/h</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="icon">💧</span>
+            <div>
+              <p class="label">Humidity</p>
+              <p id="humidity">72%</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="test.js"></script>
+</body>
+</html>
